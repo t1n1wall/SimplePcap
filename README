@@ -78,7 +78,7 @@ extension=SimplePcap.so
 See the example directory, that ships a sample php.ini file that you can use with the -c flag for php:
 
 $ cd example
-$ php -c php.ini list.php
+$ sudo php -c php.ini list.php
 any => Pseudo-device that captures on all interfaces
 eth0 =>
 lo =>
