@@ -64,6 +64,9 @@ to pass all the arguments.
 
 Compiling
 =========
+Make sure you have libpcap and libstdc++, with stdc++ doesn't always create link from .so -> .so.X
+Make sure you have swig3 , or at least a version that supports php7 (-php7 option)
+
 Edit the GNUmakefile. You will need to specify the SWIG binary location and
 the php include directory (for the .h files). Then, just:
 $ gmake
