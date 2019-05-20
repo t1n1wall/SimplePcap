@@ -1,5 +1,5 @@
-PHPINC += /usr/php-5.3/include/php
-SWIG += /export/users/marcelog/swig/bin/swig
+PHPINC += /usr/include/php7
+SWIG += /usr/bin/swig
 OUTPUTDIR += ./build
 SRCDIR += ./src
 INCDIR += ./include
@@ -30,7 +30,7 @@ ${OUTPUTDIR}/${NAME}_swig.cpp:
 	${SWIG} -outdir ${OUTPUTDIR} \
 		-oh ${OUTPUTDIR}/${NAME}_swig.h \
 		-o ${OUTPUTDIR}/${NAME}_swig.cpp \
-		-c++ -php \
+		-c++ -php7 \
 		${NAME}.i
 
 ${OUTPUTDIR}/${NAME}.so: \
