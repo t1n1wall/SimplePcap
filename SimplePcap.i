@@ -16,7 +16,7 @@ using namespace SimplePcapNs;
     deviceList::const_iterator end = $1->end();
     array_init(return_value);
     for (; iter != end; ++iter) {
-        add_assoc_string(return_value, iter->first.c_str(), (char *)iter->second.c_str(), 1);
+        add_assoc_string(return_value, iter->first.c_str(), (char *)iter->second.c_str());
     }
     delete $1;
 }
